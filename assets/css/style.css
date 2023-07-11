@@ -1,0 +1,173 @@
+/*Start Home section*/
+:root{
+    --mainColor:#ff206e;
+}
+.text-mainColor{
+    /* color: var(--mainColor); */
+}
+body{
+    /* height: 1000vh; */
+}
+.navbar{
+    transition: all 1s;
+}
+.header{
+ background-image: url('../img/bg.jpg');
+ background-size: cover;
+ background-position: center center;
+ transition: all 1s;
+    
+}
+.header .text-main:hover{
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+@media(max-width:600px){
+    .header{
+        background-image: url('../img/nav/4.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+}
+.btn-up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* z-index: 9999999; */
+    cursor: pointer;
+    display: none;
+
+}
+.options{
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 99999;
+    background-color: #bdc3c7;
+}
+.options .options-slide{
+    position: relative;
+}
+.options .fa-cog{
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: -40px;
+
+}
+.options ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.options ul li{
+    width: 20px;
+    height: 20px;
+    background-color: teal;
+    margin: 5px;
+    cursor: pointer;
+}
+.options img{
+    width: 40px;
+    cursor: pointer;
+}
+.navbar .nav-item a{
+    text-transform:uppercase;
+}
+.text-main{
+    color:var(--mainColor);
+}
+.icons i{
+    border:solid 1px #222;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 1s;
+}
+.icons i:hover{
+
+    color: var(--mainColor);
+    border-color: white;
+}
+
+@media(max-width:600px){
+    .header-content{
+        font-size: 10px;
+    }
+}
+.navbar-dark .navbar-nav .nav-item:nth-child(1) .nav-link {
+    color: var(--mainColor);
+}
+/*End Home section*/
+
+/*Start title section*/
+.title h2{
+    color:#f1f1f1;
+    font-size: 48px;
+}
+.title h3{
+    font-size: 25px;
+}
+/*End title section*/
+
+/*Start Services section*/
+
+.services{
+    background-image: url(../img/dark_dot.jpg);
+}
+.services h2{
+    color:#222;
+    font-size: 48px;
+}
+.service-item{
+    position: relative;
+}
+.services h3{
+    color: white;
+    font-size: 25px;
+}
+.service-item h4{
+    position: relative;
+}
+.service-item .fas{
+    background-color: black;
+    padding: 8px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top:-12px;
+    left: 45%;
+    transition: all 1s;
+}
+.service-item .fas:hover{
+    color: var(--mainColor);
+}
+.service-item h4:after{
+    content:'';
+    background-color:var(--mainColor);
+    position: absolute;
+    top:110%;
+    left:40%;
+    width: 20%;
+    height:3px;
+
+}
+/*End Services section*/
+
+/*start portfolio section*/
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--mainColor);
+    background-color: transparent;
+
+}
+.nav-tabs .nav-link{
+    border: 0;
+    
+}
+.nav-tabs a{
+    color: black;
+    font-weight: 700;
+} 
+
